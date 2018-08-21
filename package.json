@@ -23,7 +23,7 @@
   "dependencies": {
     "codemirror": "*",
     "codemirror-spell-checker": "*",
-    "marked": "^0.3.6"
+    "marked": "ascent-technologies/marked#d14391a5"
   },
   "devDependencies": {
     "browserify": "*",
