@@ -1,7 +1,7 @@
 /*global require,module*/
 "use strict";
 var CodeMirror = require("codemirror");
-require("codemirror/addon/edit/continuelist.js");
+// require("codemirror/addon/edit/continuelist.js");  // <- Disabled so that numbered lists aren't automatically continued in the editor
 require("./codemirror/tablist");
 require("codemirror/addon/display/fullscreen.js");
 require("codemirror/mode/markdown/markdown.js");
@@ -1448,7 +1448,7 @@ SimpleMDE.prototype.render = function(el) {
 		}
 	}
 
-	keyMaps["Enter"] = "newlineAndIndentContinueMarkdownList";
+	// keyMaps["Enter"] = "newlineAndIndentContinueMarkdownList";
 	keyMaps["Tab"] = "tabAndIndentMarkdownList";
 	keyMaps["Shift-Tab"] = "shiftTabAndUnindentMarkdownList";
 	keyMaps["Esc"] = function(cm) {
